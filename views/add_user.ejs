@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Application</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- header -->
+    <%- include("include/_header.ejs") %> 
+    <!-- header end -->
+
+    <!-- Main section -->
+
+    <section id="site-main">
+        <div class="container">
+            <div class="box-nav d-flex justify-between">
+                <div class="filter">
+                    <a href="/"><i class="fa fa-angle-double-left"></i> All Users</a>
+                </div>
+            </div>
+            <div class="form-title text-center">
+                <h2 class="text-dark">New User</h2>
+                <span class="text-light">Use the Below Form to Create a new Account</span>
+            </div>
+            <!-- form handling -->
+
+            <%- include("include/_form.ejs") %> 
+            
+            <!-- form handling ends -->
+        </div>
+    </section>
+
+    <!-- Main section ends -->
+
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
